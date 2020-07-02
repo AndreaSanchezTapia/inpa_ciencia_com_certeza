@@ -1,0 +1,210 @@
+---
+title: "Pesquisa e colaboração durante a pandemia de Covid-19"
+subtitle: ""
+author: "Andrea Sánchez-Tapia"
+institute: "Ciência com Certeza <br> INPA - Manaus"
+date: "2 de julho de 2020"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+  highlightStyle: github
+  highlightLines: true
+  countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#562457",
+  secondary_color = "#88398A",
+  colors = c(
+    red = "#A70000",
+    purple = "#88398a",
+    orange = "#ff8811",
+    green = "#136f63",
+    white = "#FFFFFF",
+    black = "#181818"
+  ),
+  text_bold_color = "#181818",
+  header_font_google = google_font("Roboto Condensed"),
+  text_font_google = google_font("Roboto", "300", "300i"),
+  code_font_google = google_font("Fira Mono"), text_font_size = "25px"
+)
+```
+
+### Apresentação
+
+
++ Bióloga - Universidade Nacional da Colômbia  
++ Mestre em Ecologia - UFRJ
++ Doutora em Botânica - JBRJ
++ .purple[Pós-doc - Núcleo de Computação Científica e Geoprocessamento do JBRJ (Marinez Ferreira de Siqueira)]
+
+Ecologia de comunidades vegetais, restauração ecológica, ecologia quantitativa.  
+
+Informática da biodiversidade, modelagem de nicho ecológico
+
+Ciência aberta e reprodutível, ética na ciência de dados, ciência de dados feminista.
+
+
+---
+background-image: url("figs/coleguinhes.png")
+background-position: 68% 64%
+background-size: 600px
+
+## Pacote de R para modelagem de nicho ecológico: .red[modleR]
+
++ __Unificar__ diferentes partes do processo de MNE
++ Fornecer __metadados__ e __documentar__ decisões de parametrização
++ Se __integrar__ ao resto de ferramentas que existem no ambiente de `R`
+
+<br>
+```{r, echo = FALSE, out.width= 150}
+knitr::include_graphics("./figs/mm.png")
+```
+
+<small>
+Marinez F Siqueira, Sara Mortara, Diogo Rocha, Guilherme Gall, Felipe Sodré
+</small>
+---
+class: bottom, center
+background-image: url("figs/modleR.png")
+background-position: 50% 0%
+background-size: 800px
+
+```{r, echo = FALSE, out.width= 800}
+knitr::include_graphics("./figs/preprint.png")
+```
+
+---
+### `#spoileralert:` A MNE não deve ser usada para modelar a distribuição da pandemia
+
+<center>
+```{r, echo = FALSE, out.width = 500}
+#knitr::include_graphics("./figs/1climate.png")
+#knitr::include_graphics("./figs/3inappropriate.png")
+#knitr::include_graphics("./figs/4useful.png")
+knitr::include_graphics("./figs/tuit.png")
+```
+</center>
+---
+background-image: url("figs/logo_jbrj.png")
+background-position: 98% 5%
+background-size: 100px
+
+ <!-- + "Curso de `R`" : ensino de ferramentas de computação científica `R` <br> --> 
+
+### Curso sobre ciência aberta e fluxos de trabalho reprodutíveis
+#### (Um curso de `R` sqn)
+
+<center>
+```{r, echo = FALSE, out.width= 500}
+knitr::include_graphics("./figs/turma.JPG")
+```
+</center>
+
+ <!-- pensada como seminário
+ alunes de várias áreas do conhecimento
+ ferramentas que não têm um ensino formal
+ de grande utilidade --> 
+
+---
+class: center, middle
+
+__Ciência aberta, boas práticas em análise de dados__
+<br><br>
+__Análise de dados<br>__
+```{r, echo = F, out.width=200}
+knitr::include_graphics("./figs/rstudio.jpg")
+
+```
+<br><br>
+__Controle de versões<br>__
+```{r, echo = F, out.width= 120}
+knitr::include_graphics("./figs/logo-git.png")
+knitr::include_graphics("./figs/GitHub_Logo.png")
+knitr::include_graphics("./figs/btibucket.png")
+knitr::include_graphics("./figs/gitlab-logo-gray-rgb.png")
+```
+<br><br><br>
+__Redação de manuscritos reprodutíveis<br>__
+
+
+```{r, echo = F, out.width= 80}
+knitr::include_graphics("./figs/rmarkdown.png")
+```
+```{r, echo = F, out.width= 150}
+knitr::include_graphics("./figs/latex.jpeg")
+knitr::include_graphics("./figs/bibtex.jpeg")
+knitr::include_graphics("./figs/zotero.svg")
+```
+
+---
+class: center, middle, inverse
+
+# Durante a pandemia
+
+---
+background-image: url("figs/coronabr.png")
+background-position: 50% 90%
+background-size: 700px
+
+## Pacote [.red[coronabr]](https://liibre.github.io/coronabr/index.html)
+
++ __Disponibilizar__ os dados do Ministério da Saúde, [Brasil I/O](https://brasil.io/dataset/covid19/caso), John Hopkins
++ Sem análises, projeções, modelos...
+
+ <!-- dois colegas de longa data --> 
+
+---
+class: center, middle
+background-image: url("figs/obs.png")
+background-position: 10% 10%
+background-size: 250px
+
+```{r, echo = F, out.width= 600}
+knitr::include_graphics("./figs/obsprint.png")
+```
+
+
+[https://covid19br.github.io/](https://covid19br.github.io/)
+
+---
+background-image: url("figs/obito.png")
+background-position: 95% 40%
+background-size: 400px
+
+ <!-- + Mais de 40 pesquisadores com diferentes formações e habilidades (epidemologia, modelagem estatística, análises socio-econômica, divulgação científica, criação de conteúdo pedagógico...) --> 
+ 
+###  Grupo de __correção de atrasos__ na notificação por "nowcasting" bayesiano.
+
+ <!-- Data do início dos sintomas  Data da notificação de que o exame deu positivo
+Data do óbito  Data da notificação do óbito --> 
+
+
+```{r, echo = FALSE, out.width = 400}
+knitr::include_graphics("https://covid19br.github.io/fig/gif_BE_05_junho.gif")
+```
+
+
+
+
+---
+class: center, middle
+
+# ¡Gracias!
+
+`r icon::fa("paper-plane", colour = "#562457")` [andreasancheztapia@gmail.com](mailto:andreasancheztapia@gmail.com) 
+
+`r icon::fa("twitter", colour = "#562457")` [@SanchezTapiaA](https://twitter.com/SanchezTapiaA) 
+
+`r icon::fa("github", colour = "#562457")` `r icon::fa("gitlab", colour = "#562457")` `r icon::fa("bitbucket", colour = "#562457")` [andreasancheztapia](http://github.com/andreasancheztapia) 
+
+`r icon::fa("r-project", colour = "#562457")` .purple[R-Ladies+ Rio de Janeiro] 
+
+---
+
