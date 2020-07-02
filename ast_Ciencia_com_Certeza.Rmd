@@ -20,12 +20,13 @@ options(htmltools.dir.version = FALSE)
 library(xaringanthemer)
 style_duo_accent(
   primary_color = "#562457",
-  secondary_color = "#88398A",
+  secondary_color = "#562457",
   colors = c(
     red = "#A70000",
     purple = "#88398a",
     orange = "#ff8811",
     green = "#136f63",
+    blue = "#4B4FFF",
     white = "#FFFFFF",
     black = "#181818"
   ),
@@ -44,11 +45,11 @@ style_duo_accent(
 + Doutora em Botânica - JBRJ
 + .purple[Pós-doc - Núcleo de Computação Científica e Geoprocessamento do JBRJ (Marinez Ferreira de Siqueira)]
 
-Ecologia de comunidades vegetais, restauração ecológica, ecologia quantitativa.  
+Ecologia de comunidades vegetais, restauração ecológica, ecologia quantitativa  
 
-Informática da biodiversidade, modelagem de nicho ecológico
+__Informática da biodiversidade__, modelagem de nicho ecológico
 
-Ciência aberta e reprodutível, ética na ciência de dados, ciência de dados feminista.
+__Ciência aberta e reprodutível__, ética na ciência de dados, ciência de dados feminista
 
 
 ---
@@ -70,6 +71,26 @@ knitr::include_graphics("./figs/mm.png")
 <small>
 Marinez F Siqueira, Sara Mortara, Diogo Rocha, Guilherme Gall, Felipe Sodré
 </small>
+
+.pull-left[
+
+`r icon::fa("firefox")` 
+<small>
+[https://model-r.github.io/modleR/](https://model-r.github.io/modleR/)
+</small>
+]
+
+.pull-right[
+<p style="text-align:center;">
+
+`r icon::fa("youtube")` 
+
+<a href="https://www.youtube.com/watch?v=4Xw33TdIVXA">Aula no curso ENM-2020</a>
+
+</p>
+
+]
+
 ---
 class: bottom, center
 background-image: url("figs/modleR.png")
@@ -81,7 +102,7 @@ knitr::include_graphics("./figs/preprint.png")
 ```
 
 ---
-### `#spoileralert:` A MNE não deve ser usada para modelar a distribuição da pandemia
+#### A MNE não deve ser usada para modelar a distribuição da pandemia .purple[`#spoileralert`]
 
 <center>
 ```{r, echo = FALSE, out.width = 500}
@@ -101,47 +122,46 @@ background-size: 100px
 ### Curso sobre ciência aberta e fluxos de trabalho reprodutíveis
 #### (Um curso de `R` sqn)
 
-<center>
-```{r, echo = FALSE, out.width= 500}
+.pull-left[
+```{r, echo = FALSE, out.width= 320}
 knitr::include_graphics("./figs/turma.JPG")
 ```
-</center>
+Turma 2020 :) 
+]
+
+.pull-right[
+
+__Boas práticas__ em análise de dados
+
+```{r, echo = F, out.width=200}
+knitr::include_graphics("./figs/rstudio.jpg")
+
+```
+
+```{r, echo = F, out.width= 80}
+knitr::include_graphics("./figs/logo-git.png")
+knitr::include_graphics("./figs/GitHub_Logo.png")
+knitr::include_graphics("./figs/btibucket.png")
+knitr::include_graphics("./figs/gitlab-logo-gray-rgb.png")
+```
+
+```{r, echo = F, out.width= 100}
+knitr::include_graphics("./figs/latex.jpeg")
+knitr::include_graphics("./figs/bibtex.jpeg")
+knitr::include_graphics("./figs/zotero.svg")
+```
+```{r, echo = F, out.width= 50}
+knitr::include_graphics("./figs/rmarkdown.png")
+```
+]
+
 
  <!-- pensada como seminário
  alunes de várias áreas do conhecimento
  ferramentas que não têm um ensino formal
  de grande utilidade --> 
 
----
-class: center, middle
 
-__Ciência aberta, boas práticas em análise de dados__
-<br><br>
-__Análise de dados<br>__
-```{r, echo = F, out.width=200}
-knitr::include_graphics("./figs/rstudio.jpg")
-
-```
-<br><br>
-__Controle de versões<br>__
-```{r, echo = F, out.width= 120}
-knitr::include_graphics("./figs/logo-git.png")
-knitr::include_graphics("./figs/GitHub_Logo.png")
-knitr::include_graphics("./figs/btibucket.png")
-knitr::include_graphics("./figs/gitlab-logo-gray-rgb.png")
-```
-<br><br><br>
-__Redação de manuscritos reprodutíveis<br>__
-
-
-```{r, echo = F, out.width= 80}
-knitr::include_graphics("./figs/rmarkdown.png")
-```
-```{r, echo = F, out.width= 150}
-knitr::include_graphics("./figs/latex.jpeg")
-knitr::include_graphics("./figs/bibtex.jpeg")
-knitr::include_graphics("./figs/zotero.svg")
-```
 
 ---
 class: center, middle, inverse
@@ -156,41 +176,74 @@ background-size: 700px
 ## Pacote [.red[coronabr]](https://liibre.github.io/coronabr/index.html)
 
 + __Disponibilizar__ os dados do Ministério da Saúde, [Brasil I/O](https://brasil.io/dataset/covid19/caso), John Hopkins
-+ Sem análises, projeções, modelos...
++ Sem análises, projeções ou modelos
 
  <!-- dois colegas de longa data --> 
 
 ---
-class: center, middle
+class: middle
 background-image: url("figs/obs.png")
-background-position: 10% 10%
-background-size: 250px
+background-position: 90% 5%
+background-size: 150px
 
-```{r, echo = F, out.width= 600}
+ <!--
++ Criado 14/03/2020 (UNESP, USP, UFABC). 
++ Hoje >40 pesquisadores (modelagem estatística, análises socioeconômicas, epidemiologia, divulgação científica) 
++ Notas técnicas, suporte à tomada de decisão
++ Parcerias locais com Secretarias de Saúde
+--> 
+
+```{r, echo = F, out.width= 950}
 knitr::include_graphics("./figs/obsprint.png")
 ```
 
 
-[https://covid19br.github.io/](https://covid19br.github.io/)
+
+.pull-left[
+
+`r icon::fa("twitter")` .blue[@obscovid19br]
+]
+.pull-right[
+`r icon::fa("firefox")` .blue[covid19br.github.io]
+]
+
 
 ---
-background-image: url("figs/obito.png")
-background-position: 95% 40%
-background-size: 400px
+background-image: url("figs/ridge.png")
+background-position: 100% 60%
+background-size: 530px
 
  <!-- + Mais de 40 pesquisadores com diferentes formações e habilidades (epidemologia, modelagem estatística, análises socio-econômica, divulgação científica, criação de conteúdo pedagógico...) --> 
  
-###  Grupo de __correção de atrasos__ na notificação por "nowcasting" bayesiano.
+####  Grupo de __correção de atrasos__ na notificação por "nowcasting" bayesiano (McGough _et al._ 2020)
 
  <!-- Data do início dos sintomas  Data da notificação de que o exame deu positivo
 Data do óbito  Data da notificação do óbito --> 
 
+.pull-left[
 
-```{r, echo = FALSE, out.width = 400}
-knitr::include_graphics("https://covid19br.github.io/fig/gif_BE_05_junho.gif")
+```{r, echo = FALSE, out.width = 300}
+knitr::include_graphics("figs/obito.png")
 ```
 
+#### (Notificação: 27/06/2020)
 
+]
+
+.pull-right[
+
+]
+
+---
+class: center, middle
+
+#### Tabatinga (AM) 
+```{r echo=FALSE, out.width=350}
+knitr::include_graphics("figs/tabatinga/plot_nowcast_covid.svg")
+knitr::include_graphics("figs/tabatinga/plot_nowcast_srag.svg")
+knitr::include_graphics("figs/tabatinga/plot_nowcast_cum_covid.svg")
+knitr::include_graphics("figs/tabatinga/plot_nowcast_cum_srag.svg")
+```
 
 
 ---
@@ -204,7 +257,5 @@ class: center, middle
 
 `r icon::fa("github", colour = "#562457")` `r icon::fa("gitlab", colour = "#562457")` `r icon::fa("bitbucket", colour = "#562457")` [andreasancheztapia](http://github.com/andreasancheztapia) 
 
-`r icon::fa("r-project", colour = "#562457")` .purple[R-Ladies+ Rio de Janeiro] 
-
----
+`r icon::fa("r-project", colour = "#562457")` [R-Ladies+ Rio de Janeiro](https://www.meetup.com/pt-BR/rladies-rio/)
 
