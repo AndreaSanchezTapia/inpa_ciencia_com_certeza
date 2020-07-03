@@ -237,8 +237,17 @@ knitr::include_graphics("figs/obito.png")
 ---
 class: center, middle
 
-#### Tabatinga (AM) 
-```{r echo=FALSE, out.width=350}
+#### Tabatinga (AM) (fonte: SIVEP - Nacional 30/06/2020)
+
+.pull-left[
+<small> COVID-19 </small>
+]
+
+.pull-right[
+<small> Síndrome Respiratória Aguda Grave (SRAG) </small>
+]
+
+```{r echo=FALSE, out.width=300}
 knitr::include_graphics("figs/tabatinga/plot_nowcast_covid.svg")
 knitr::include_graphics("figs/tabatinga/plot_nowcast_srag.svg")
 knitr::include_graphics("figs/tabatinga/plot_nowcast_cum_covid.svg")
